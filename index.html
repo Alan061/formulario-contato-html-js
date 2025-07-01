@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Contato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="contact-form">
+      <h2>Fale Conosco</h2>
+
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" required />
+      <span class="error" id="name-error"></span>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required />
+      <span class="error" id="email-error"></span>
+
+      <label for="subject">Assunto</label>
+      <input type="text" id="subject" name="subject" required />
+      <span class="error" id="subject-error"></span>
+
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message" required></textarea>
+      <span class="error" id="message-error"></span>
+
+      <div class="button-group">
+        <button type="submit">Enviar</button>
+        <button type="button" id="whatsapp-button">Enviar via WhatsApp</button>
+      </div>
+
+      <div id="status-message"></div>
+    </form>
+  </div>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
